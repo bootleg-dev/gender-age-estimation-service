@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  gender-age-service:
+    container_name: gender-age-service
+    build: .
+    environment:
+      GPU_CTX: "-1"
+    ports:
+      - "8000:8000"
+    restart: always
